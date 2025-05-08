@@ -1,13 +1,3 @@
-// First, let's create a new JavaScript file called ajax.js
-// This file will contain our AJAX utility functions
-
-/**
- * AJAX utility function to handle form submissions
- * @param {string} url - The URL to send the request to
- * @param {FormData|Object} formData - The form data to send
- * @param {Function} successCallback - Function to call on success
- * @param {Function} errorCallback - Function to call on error
- */
 function ajaxFormSubmit(url, formData, successCallback, errorCallback) {
     const xhr = new XMLHttpRequest();
     xhr.open('POST', url, true);
@@ -39,12 +29,6 @@ function ajaxFormSubmit(url, formData, successCallback, errorCallback) {
     
     xhr.send(formData);
 }
-
-/**
- * Shows a notification message to the user
- * @param {string} message - The message to display
- * @param {string} type - The type of message (success/error)
- */
 function showNotification(message, type = 'success') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;
