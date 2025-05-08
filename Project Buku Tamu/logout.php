@@ -1,7 +1,7 @@
 <?php
-session_start();            // Mulai session
-session_unset();            // Hapus semua variabel session
-session_destroy();          // Hancurkan session
+session_start();            
+session_unset();            
+session_destroy();          
 
 header("Location: login.php");  // Arahkan ke halaman login
 exit();
